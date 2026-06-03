@@ -3638,26 +3638,31 @@
                                 stroke-linecap: round;
                                 fill: none;
                                 filter: drop-shadow(0 0 3px rgba(157, 34, 53, 0.45));
+                                opacity: 0;
                             }
 
-                            .path-stage-1 {
+                            .slide.active .path-stage-1 {
                                 stroke-dasharray: 20 300;
                                 animation: stage1Pulse 4s infinite linear;
                             }
 
-                            .path-stage-2 {
+                            .slide.active .path-stage-2 {
                                 stroke-dasharray: 20 220;
                                 animation: stage2Pulse 4s infinite linear;
                             }
 
-                            .path-stage-3 {
+                            .slide.active .path-stage-3 {
                                 stroke-dasharray: 15 80;
                                 animation: stage3Pulse 4s infinite linear;
                             }
 
-                            .path-stage-4 {
+                            .slide.active .path-stage-4 {
                                 stroke-dasharray: 15 80;
                                 animation: stage4Pulse 4s infinite linear;
+                            }
+
+                            .slide.active .output-node {
+                                animation: stage5Burst 4s infinite ease-in-out;
                             }
 
                             @keyframes stage1Pulse {
@@ -3939,9 +3944,8 @@
                                 Ridge (L2)</span>
                         </div>
 
-                        <!-- 6. Predicción Final (With glow/scale burst animation) -->
                         <div class="flow-node output-node"
-                            style="position: absolute; top: 25px; left: 150px; width: 260px; height: 45px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 8px; z-index: 10; border: 1.5px solid #E53935; animation: stage5Burst 4s infinite ease-in-out;">
+                            style="position: absolute; top: 25px; left: 150px; width: 260px; height: 45px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 8px; z-index: 10; border: 1.5px solid #E53935;">
                             <span
                                 style="font-size: 0.72rem; font-weight: 700; color: #E53935; font-family: 'Outfit', sans-serif;">Predicción
                                 Final: 7 Emociones</span>
