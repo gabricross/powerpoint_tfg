@@ -5175,7 +5175,36 @@
                 </div>
             </section>
 
-            <!-- SLIDE 17: Conclusiones -->
+            <!-- SLIDE 17: Vídeo Demostración -->
+            <section class="slide" data-section="05" data-kicker="05. Despliegue • Demostración Práctica">
+                <div class="slide-info">
+                    <h2 class="slide-title">Demostración práctica <span>en tiempo real</span></h2>
+                    <p class="slide-description">Grabación de pantalla de la aplicación ejecutándose en un dispositivo móvil real en condiciones cotidianas.</p>
+                    <ul class="bullets-list">
+                        <li><strong>Detección Dinámica:</strong> Clasificación instantánea ante transiciones rápidas de expresión.</li>
+                        <li><strong>Robustez:</strong> Funcionamiento estable bajo cambios de iluminación y ángulos de rotación.</li>
+                        <li><strong>Filtro Heurístico en Acción:</strong> Corrección en tiempo real que previene la clasificación errónea de rostros neutros como tristeza.</li>
+                    </ul>
+                </div>
+                <div class="slide-graphic"
+                    style="background: none; border: none; box-shadow: none; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <!-- Elegant Phone Frame for the Video -->
+                    <div style="position: relative; width: 280px; height: 500px; background: #000; border-radius: 36px; padding: 10px; box-shadow: 0 20px 40px rgba(0,0,0,0.15), inset 0 0 3px rgba(255,255,255,0.2); border: 4px solid #1f1f1f; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                        <!-- Speaker / Notch -->
+                        <div style="position: absolute; top: 12px; width: 60px; height: 4px; background: #333; border-radius: 10px; z-index: 10;"></div>
+                        <!-- Video Element -->
+                        <video controls style="width: 100%; height: 100%; object-fit: cover; border-radius: 28px;" id="demoVideo">
+                            <source src="video_demo.mp4" type="video/mp4">
+                            Tu navegador no soporta reproducción de vídeo.
+                        </video>
+                    </div>
+                    <span class="img-caption" style="font-size: 0.65rem; color: var(--text-muted); font-weight: 500; margin-top: 10px;">
+                        Vídeo demostración del pipeline de inferencia local en dispositivo Android
+                    </span>
+                </div>
+            </section>
+
+            <!-- SLIDE 18: Conclusiones -->
             <section class="slide" data-section="06" data-kicker="06. Conclusiones y Trabajos Futuros">
                 <div class="slide-info">
                     <h2 class="slide-title">Conclusiones de la investigación y <span>líneas futuras</span></h2>
@@ -5314,7 +5343,7 @@
                 </div>
             </section>
 
-            <!-- SLIDE 18: Gracias -->
+            <!-- SLIDE 19: Gracias -->
             <section class="slide full-width" data-section="06" data-kicker="Trabajo Fin de Grado • Grado en Ingeniería Informática"
                 style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: radial-gradient(circle at center, rgba(157, 34, 53, 0.02) 0%, rgba(255, 255, 255, 0) 75%); padding: 40px;">
                 <div style="max-width: 800px; display: flex; flex-direction: column; align-items: center; gap: 24px;">
@@ -5366,13 +5395,14 @@
                         <option value="13">14. Métricas por Clase</option>
                         <option value="14">15. Topología (t-SNE)</option>
                         <option value="15">16. Android App</option>
-                        <option value="16">17. Conclusiones</option>
-                        <option value="17">18. Gracias</option>
+                        <option value="16">17. Demo Vídeo</option>
+                        <option value="17">18. Conclusiones</option>
+                        <option value="18">19. Gracias</option>
                     </select>
                 </div>
                 <button class="nav-btn" id="prevBtn" title="Anterior (Flecha Izquierda)"><i
                         class="fa-solid fa-chevron-left"></i></button>
-                <div class="slide-indicator" id="slideIndicator">Slide <span>1</span> / 18</div>
+                <div class="slide-indicator" id="slideIndicator">Slide <span>1</span> / 19</div>
                 <button class="nav-btn" id="nextBtn" title="Siguiente (Flecha Derecha)"><i
                         class="fa-solid fa-chevron-right"></i></button>
                 <button class="fullscreen-btn" id="btnFullscreen" title="Pantalla Completa (F11)"><i
